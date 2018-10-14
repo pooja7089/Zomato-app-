@@ -1,0 +1,19 @@
+header, footer {
+    background-color: rgb(224, 21, 99);
+    color: aliceblue;
+    padding:20px;
+    text-align: center;
+}
+nav {
+    background-color: rgb(129, 33, 240);
+}
+#searchform {
+        width:250px;
+        font-size: 16px;
+        padding: 12px 20px 12px;
+}
+h3 {
+    color: rgb(21, 123, 219);
+}
+
+

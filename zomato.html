@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta char="utf=8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+        <title>My First zomato app</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+        <link curl href="https://developers.zomato.com/api/v2.1/categories ">
+        <link href="app.css" rel="stylesheet"/>
+    </head>
+
+    <!--this is loaded page of zomato developer-->
+    <body onload="('Page  is loaded');"></body> 
+        <header class="container-fluid">
+        <h1>Zomato developers</h1>
+        </header>
+
+
+        <!--Collect the nav links,forms -->
+        <nav class="container-fluid">
+                <ul class="nav navbar-inverse navbar-nav">
+                    <div class="row">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#"Contact>Contact</a></li>
+                 </ul>
+        </nav> 
+        
+        <div class="container-fluid">
+                <form [formGroup]="formdata" (ngSubmit) = "onClickSubmit(formdata.value)" >
+                    <h3 class="text-center">Your Location</h3>
+                    <form class="form-inline">
+                    <link curl= "https://developers.zomato.com/api/v2.1/categories" >
+                    <input type="form-control" id="Search" placeholder="Search for restaurant,cuisine or dish....">
+                    <button class="btn btn" type="submit">Search</button>
+        </form>/<!--form of group of data-->
+         </div><!--/container-fluid-->
+        </div>
+
+         <footer class="panel-footer">
+        <div class="container-fluid">
+            <div class="row">
+                 Copyright 2017 
+        </footer><!--/panel-footer-->
+    </div>
+    </body>
+
+</html>
